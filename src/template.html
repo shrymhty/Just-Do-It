@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Do It</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <p>Menu</p>
+            <div class="links">
+                <a href="#tasks">All Tasks</a>
+                <hr>
+                <a href="#complete">Completed Tasks</a>
+                <hr>
+                <a href="#incomplete">Pending Tasks</a>
+                <hr>
+            </div>
+
+        </div>
+        <div class="main">
+            <header>
+                <h1>To Do List</h1>
+            </header>
+            <dialog>
+                <h3>New Task</h3>
+                <input type="text" name="task-title" id="task-title" placeholder="Enter task title">
+                <span class="error"></span>
+                <textarea name="task-description" id="task-description" placeholder="Description"></textarea>
+                <button class="submit">Add Task</button>
+            </dialog>
+            <div class="cards">
+                <div class="card" id="new-item">+</div> 
+            </div>
+        </div>  
+    </div>
+    
+    
+</body>
+</html>

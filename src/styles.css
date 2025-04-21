@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+*, html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: #faf7f2;
+    font-family: "EB Garamond", serif;
+}
+
+
+.navbar {
+    height: 100vh; 
+    width: 20%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: lightgray; 
+    padding-top: 20px;
+}
+
+.navbar > p {
+    background-color: lightgray;
+    padding: 0 30px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.main {
+    margin-left: 20%;
+}
+
+header {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin-left: 20px;
+}
+
+.links > a {
+    padding: 10px;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+    color: #585858;
+    width: 50%;
+}
+
+hr {
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: darkgray;
+    border: none;
+}
+
+.links > a:hover {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+.cards {
+    margin: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+}
+
+#new-item {
+    background-color: lightpink;
+    font-size: 6rem;
+    color: gray;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    width: 15%;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+dialog {
+    border: none;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 20rem;
+    z-index: 1000; 
+}
+
+#task-title {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid darkgray;
+    font-size: 1.2rem;
+}
+
+#task-title:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#task-description {
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px darkgray;
+    height: 10rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+.error {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #b00020;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.submit {
+    display: block;
+    margin: 10px auto 0; 
+    padding: 10px 20px;
+    background-color: cadetblue; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-description:focus {
+    outline: none;
+    box-shadow: none;
+}
