@@ -10,18 +10,19 @@
         <div class="navbar">
             <p>Menu</p>
             <div class="links">
-                <a href="#tasks">All Tasks</a>
+                <a href="#tasks" id="all" data-filter="all">All Tasks</a>
                 <hr>
-                <a href="#complete">Completed Tasks</a>
+                <a href="#complete" id="complete" data-filter="complete">Completed Tasks</a>
                 <hr>
-                <a href="#incomplete">Pending Tasks</a>
+                <a href="#incomplete" id="incomplete" data-filter="incomplete">Pending Tasks</a>
                 <hr>
-            </div>
+            </div>            
 
         </div>
         <div class="main">
             <header>
                 <h1>To Do List</h1>
+                <button id="new-item">+ New Task</button>
             </header>
             <dialog>
                 <h3>New Task</h3>
@@ -31,7 +32,6 @@
                 <button class="submit">Add Task</button>
             </dialog>
             <div class="cards">
-                <div class="card" id="new-item">+</div> 
             </div>
         </div>  
     </div>
